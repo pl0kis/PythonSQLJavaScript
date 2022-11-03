@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- <script src="main.js" defer></script> -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bibliotekaPython</title>
+    <script src="eel.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="main">
+        <form class="giveBook">
+            <h1>Выдача книг</h1>
+            <div class="inputAndText">
+                <label for="">Название книги</label>
+                <select name="" id="" class="idBook"></select>
+            </div>
+            <div class="inputAndText">
+                <label for="">№ Абономенета</label>
+                <select name="" id="" class="idReader"></select>
+            </div>
+            <div class="inputAndText">
+                <label for="">Количество <br> взятых книг</label>
+                <input type="text" name="" id="" placeholder="Count books" class="countBooksMove">
+            </div>
+            <div class="inputAndText">
+                <label for="">Дата выдачи</label>
+                <input type="date" name="" id="" class="dateOut">
+            </div>
+            <div class="inputAndText">
+                <label for="">Дата возрата</label>
+                <input type="date" name="" id="" class="dateIn">
+            </div>
+            
+            <button class="giveBookButton">Give book</button>
+        </form>
+        <form action="" class="formBackReturnBook">
+            <h1>Возврат книг</h1>
+            <div class="allMoveBook">
+                <table class="tableForReturnBooks">
+
+                </table>
+            </div>
+        </form>
+        <div class="header">
+            <h1>Подключение к базе данных</h1>
+
+            <div class="inputsForConnect">
+                <!-- <input type="text" placeholder = "host" class="inputHost">
+                <input type="text" placeholder = "user" class="inputUser">
+                <input type="text" placeholder = "password" class="inputPassword">
+                <input type="text" placeholder = "database name" class="inputDBName"> -->
+            </div>
+                <button class="buttonConnectOnDatabase">Connect</button>
+        
+            </div>
+        <div class="middle">
+        
+            
+            <div class="selectAndVubor">
+                <h2>Внесение записей</h2>
+                <p>Название столбца</p>
+                <select name="" id="columnsSelect" class="columnsSelect"></select>
+                <div class="inputsForInsert">
+
+                </div>
+                <button class="insertValuesInDatabase">Add new record</button>
+            </div>
+            <div class="selectCheck">
+                <h3>Запросы</h3>
+                <div class="Selects">
+                        <p>Просмотр всех записей в таблице</p>
+                    <select name="" id="" class="columnSelectCheck"></select>
+                    <button class="buttonCheckRecord">Check record</button>
+                    <div class="recordsAll">
+                    <table class="tableForSelect">
+                        
+                    </table>
+                    </div>
+                </div>
+                
+                <div class="uniqueCheck">
+                    <h4>Уникальные запросы</h4>
+                    <select name="" id="" class="CheckUniqueSelect"></select>
+                    <button class="buttonCheckUniqueSelect">Check select</button>
+                    <div class="UniqueSelectDiv">
+                        <table class="tableForUniqueSelect">
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+    
+    <!-- <button class="buttonForSelectInDatabase">Select</button> -->
+    <script type="module" src="main.js"></script>
+    <script type="module" src="returnBook.js"></script>
+</body>
+</html>

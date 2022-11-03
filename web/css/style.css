@@ -1,0 +1,76 @@
+
+body{
+    background-color: rgb(226, 234, 204);
+}
+
+
+
+
+.main{
+
+}
+
+.header{
+    width: 415px;
+    margin-left: 36%;
+    box-shadow: 3px 3px rgb(222, 220, 220), -1em 0 .4em rgb(195, 195, 189);
+}
+
+.inputsForConnect input{
+    display: block;
+    margin-top: 5px;
+    margin-left: 120px;
+}
+.buttonConnectOnDatabase{
+    width: 170px;
+    margin-top: 5px;
+    margin-left: 120px;
+}
+input{
+    height: 30px;
+    border-radius: 2px;
+    border: 0;
+}
+
+button{
+    transition: 2s;
+    background-color:white;
+    border-radius:10px;
+}
+select{
+    width: 100px;
+    height: 30px;
+    border-radius:20px;
+}
+select:active, select:hover {
+    outline-color: red
+  }
+
+button:hover{
+    transition: 2s;
+    background-color:black;
+    color:white;
+    cursor:pointer;
+}
+
+.giveBook input,select,button{
+    margin-top: 20px;
+    display: block;
+}
+.inputAndText{
+    display: flex;
+}
+.inputAndText label{
+    padding-top: 20px;
+    padding-right: 100px;
+}
+.inputAndText select{
+    display: block;
+}
+.countBooksMove{
+
+    width: 110px;
+}
+.inputAndText input{
+    margin-left: 25px;
+}
